@@ -16,12 +16,13 @@ body_model.fit(x_values,y_values)
 
 print(body_model.coef_)
 
-print(np.mean((body_model.predict(x_values)-y_values)**2))
+print(np.mean((body_model.predict(x_values)-y_values) **2))
 
 print(body_model.score(x_values,y_values))
 
 
 plt.scatter(x_values,y_values)
+
 plt.plot(x_values,body_model.predict(x_values))
 
 plt.show()
